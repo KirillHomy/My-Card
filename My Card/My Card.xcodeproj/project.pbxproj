@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FF3778329D9EE320014E915 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3778229D9EE320014E915 /* Card.swift */; };
 		ED2F76F9264DB85300FFA104 /* My_CardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F76F8264DB85300FFA104 /* My_CardApp.swift */; };
 		ED2F76FB264DB85300FFA104 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F76FA264DB85300FFA104 /* ContentView.swift */; };
 		ED2F76FD264DB85600FFA104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2F76FC264DB85600FFA104 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FF3778229D9EE320014E915 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		ED2F76F5264DB85300FFA104 /* My Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2F76F8264DB85300FFA104 /* My_CardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_CardApp.swift; sourceTree = "<group>"; };
 		ED2F76FA264DB85300FFA104 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				ED2F76F8264DB85300FFA104 /* My_CardApp.swift */,
 				ED2F76FA264DB85300FFA104 /* ContentView.swift */,
+				7FF3778229D9EE320014E915 /* Card.swift */,
 				ED2F76FC264DB85600FFA104 /* Assets.xcassets */,
 				ED2F7701264DB85600FFA104 /* Info.plist */,
 				ED2F76FE264DB85600FFA104 /* Preview Content */,
@@ -95,8 +98,9 @@
 		ED2F76ED264DB85300FFA104 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					ED2F76F4264DB85300FFA104 = {
 						CreatedOnToolsVersion = 12.5;
@@ -139,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED2F76FB264DB85300FFA104 /* ContentView.swift in Sources */,
+				7FF3778329D9EE320014E915 /* Card.swift in Sources */,
 				ED2F76F9264DB85300FFA104 /* My_CardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,8 +284,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Yes.My-Card";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,8 +309,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Yes.My-Card";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
